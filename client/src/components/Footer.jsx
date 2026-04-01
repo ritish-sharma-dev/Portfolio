@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink } from "react-router";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
@@ -9,7 +10,7 @@ const Footer = () => {
         <>
             {/* FOOTER START */}
             <footer className="w-full border-t border-primary/10 bg-brand-dark pt-15 pb-10">
-                <div className="max-w-7xl mx-auto px-4 lg:px-8">
+                <div className="max-w-full mx-auto px-4 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
                         {/* FOOTER LEFT START*/}
                         <div className="lg:col-span-4 flex flex-col gap-6">

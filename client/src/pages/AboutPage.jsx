@@ -1,11 +1,8 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import React from "react";
 
 const AboutPage = () => {
     return (
         <>
-            <Navbar />
-
             {/* ABOUT PAGE START  */}
             <main className="flex-1 overflow-y-auto custom-scrollbar bg-white dark:bg-background-dark">
                 <div className="max-w-3xl px-4 md:px-12 py-12">
@@ -146,8 +143,6 @@ const AboutPage = () => {
                 </div>
             </main>
             {/* ABOUT PAGE END */}
-
-            <Footer />
         </>
     );
 };

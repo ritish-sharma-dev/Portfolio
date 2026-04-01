@@ -1,5 +1,4 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import React from "react";
 import ECard1 from "../components/cards/EducationPageCards/ECard1";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
@@ -9,8 +8,6 @@ const ContactPage = () => {
 
     return (
         <>
-            <Navbar />
-            
             {/* CONTACT PAGE START */}
             <div className=" flex overflow-hidden">
                 <section className="flex-1 max-w-3xl px-4 py-12 lg:px-12 overflow-y-auto">
@@ -131,8 +128,6 @@ const ContactPage = () => {
                 <ECard1 />
             </div>
             {/* CONTACT PAGE END */}
-
-            <Footer />
         </>
     );
 };

@@ -1,5 +1,4 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import React from "react";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 
@@ -8,8 +7,6 @@ const EducationPage = () => {
 
     return (
         <>
-            <Navbar />
-
             <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
                 <div className="mx-auto flex">
                     {/* MAIN CONTENT START  */}
@@ -84,7 +81,6 @@ const EducationPage = () => {
                 </div>
             </div>
 
-            <Footer />
         </>
     );
 };

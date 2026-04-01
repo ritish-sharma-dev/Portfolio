@@ -1,5 +1,4 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import React from "react";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 
@@ -8,8 +7,6 @@ const SkillsPage = () => {
 
     return (
         <>
-            <Navbar />
-
             {/* SKILLS PAGE START */}
             <main className="flex-1 overflow-y-auto bg-background-dark lg:bg-background-dark scroll-smooth">
                 <div className="max-w-4xl  px-4 lg:px-12 py-12">
@@ -72,8 +69,6 @@ const SkillsPage = () => {
                 </div>
             </main>
             {/* SKILLS PAGE END */}
-
-            <Footer />
         </>
     );
 };

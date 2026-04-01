@@ -1,6 +1,5 @@
-import Navbar from "../components/Navbar";
+import React from "react";
 import { NavLink } from "react-router";
-import Footer from "../components/Footer";
 import Card2 from "../components/cards/HomePageCards/Card2";
 import Card3 from "../components/cards/HomePageCards/Card3";
 import Card4 from "../components/cards/HomePageCards/Card4";
@@ -8,8 +7,6 @@ import Card4 from "../components/cards/HomePageCards/Card4";
 const HomePage = () => {
     return (
         <>
-            <Navbar />
-
             {/* HOME PAGE START */}
             <main className="flex-1 flex flex-col lg:flex-row">
                 <div className="flex-1 max-w-3xl border-r border-slate-200 dark:border-primary/5">
@@ -149,8 +146,6 @@ const HomePage = () => {
                 {/* RIGHT SIDE CODE END */}
             </main>
             {/* HOME PAGE END */}
-            
-            <Footer />
         </>
     );
 };
