@@ -40,9 +40,11 @@ const EducationPage = () => {
                             {/* EDUCATION TIMELINE START */}
                             <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-linear-to-b before:from-primary before:via-primary/20 before:to-transparent">
                                 {/* ITEM START */}
-                                {education.map((education) => {
+                                {education.map((education,index) => {
                                     return (
-                                        <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                                        <div
+                                        key={index}
+                                        className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                                             <div className="flex items-center justify-center w-10 h-10 rounded-full border border-primary bg-background-light dark:bg-background-dark text-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                                                 <span className="material-symbols-outlined">
                                                     school

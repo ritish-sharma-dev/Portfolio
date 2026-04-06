@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { NavLink } from "react-router";
 import { useContext } from "react";
@@ -7,7 +7,7 @@ import { PortfolioContext } from "../context/PortfolioContext";
 const Navbar = () => {
     let { pageLinks } = useContext(PortfolioContext);
     const [open, setOpen] = useState(false);
-    const navLinks = open ? [...pageLinks, { name: "Contact Us", href: "/contact" }] : pageLinks;
+    const navLinks = pageLinks;
 
     return (
         <>
@@ -40,11 +40,23 @@ const Navbar = () => {
                                         to={link.href}
                                         key={link.name}
                                         className="px-4 py-2 text-sm font-medium text-slate-400 hover:text-primary transition-colors duration-200"
+                                        onClick={() => setOpen(false)}
                                     >
                                         {link.name}
                                     </NavLink>
                                 );
                             })}
+
+                            {open && (
+                                <NavLink
+                                    to="/contact"
+                                    key="contact"
+                                    className="px-4 py-2 text-sm font-medium text-slate-400 hover:text-primary transition-colors duration-200"
+                                    onClick={() => setOpen(false)}
+                                >
+                                    Contact Us
+                                </NavLink>
+                            )}
                         </div>
                         {/* RIGHT: SEARCH AND CONTACT */}
                         <div className="flex items-center gap-4">

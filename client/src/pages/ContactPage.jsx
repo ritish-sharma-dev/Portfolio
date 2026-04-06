@@ -71,7 +71,7 @@ const ContactPage = () => {
                                     <input
                                         className="w-full  bg-[#161C1B] border border-[#1e2927] rounded-lg px-4 py-2.5 text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
                                         placeholder="Subject"
-                                        type="email"
+                                        type="text"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -107,11 +107,12 @@ const ContactPage = () => {
                             {/* LINKS START */}
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                 {/* LINK  */}
-                                {socialLinks.map((link) => {
+                                {socialLinks.map((link,index) => {
                                     return (
                                         <a
                                             className="flex flex-col items-center justify-center p-6 rounded-xl border border-[#1e2927] bg-[#161c1b4d] hover:bg-[#161C1B] transition-all group"
                                             href={link.url}
+                                            key={index}
                                         >
                                             <span className="text-sm font-medium text-white">
                                                 {link.name}
