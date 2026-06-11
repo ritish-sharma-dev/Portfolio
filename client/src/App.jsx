@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import SkillsPage from "./pages/SkillsPage";
@@ -12,6 +13,7 @@ import Footer from "./components/Footer";
 function App() {
     return (
         <>
+            <Toaster position="top-center" containerStyle={{top: 60}} />
             <div className="max-w-360 m-auto bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
                 <BrowserRouter>
                     <Navbar/>

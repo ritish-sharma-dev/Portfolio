@@ -56,7 +56,7 @@ const Card4 = () => {
                                 using namespace
                             </span>{" "}
                             <span className="text-emerald-400">
-                                &lt;std&gt;
+                                std;
                             </span>
                         </div>
                         <div>
@@ -68,14 +68,14 @@ const Card4 = () => {
                         <div>
                             {" "}
                             <span className="text-slate-500">
-                                // Welcome to my portfolio
+                                // WELCOME TO MY PORTFOLIO
                             </span>
                         </div>
 
                         <div>
                             {" "}
                             <span className="text-blue-400">string</span>{" "}
-                            developer_name ={" "}
+                            developerName ={" "}
                             <span className="text-emerald-400">
                                 "Ritish Sharma"
                             </span>
@@ -120,7 +120,7 @@ const Card4 = () => {
                             <span className="text-emerald-400">
                                 "Hello, I am "
                             </span>{" "}
-                            &lt;&lt; developer_name &lt;&lt;{" "}
+                            &lt;&lt; developerName &lt;&lt;{" "}
                             <span className="text-blue-300">endl</span>;
                         </div>
                         <div>

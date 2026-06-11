@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import ECard1 from "../components/cards/EducationPageCards/ECard1";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 const ContactPage = () => {
     const { socialLinks } = useContext(PortfolioContext);
+    const [fullName, setFullName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+
+    const sendContactMessage = async (fullName, email, subject, message) => {
+        try {
+            let formData = { fullName, email, subject, message };
+            const { data } = await axios.post(
+                `${import.meta.env.VITE_BACKEND_URL}/contact`,
+                formData
+            );
+            if (data.success) {
+                toast.success(data.message);
+            } else {
+                toast.error(data.message);
+            }
+        } catch (error) {
+            toast.error(error.message);
+        }
+    };
+
+    const onSubmitHandler = (e) => {
+        e.preventDefault();
+        console.log(fullName, email, subject, message);
+        sendContactMessage(fullName, email, subject, message);
+    };
 
     return (
         <>
@@ -41,13 +70,20 @@ const ContactPage = () => {
                                 Send a Message
                             </h2>
                             {/* FORM START */}
-                            <form className="space-y-5">
+                            <form
+                                onSubmit={onSubmitHandler}
+                                className="space-y-5"
+                            >
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                     <div className="space-y-2">
                                         <label className="text-sm font-medium text-slate-400">
                                             Full Name
                                         </label>
                                         <input
+                                            onChange={(e) =>
+                                                setFullName(e.target.value)
+                                            }
+                                            value={fullName}
                                             className="w-full bg-[#161C1B] border border-[#1e2927] rounded-lg px-4 py-2.5 text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
                                             placeholder="Ritish Sharma"
                                             type="text"
@@ -58,6 +94,10 @@ const ContactPage = () => {
                                             Email Address
                                         </label>
                                         <input
+                                            onChange={(e) =>
+                                                setEmail(e.target.value)
+                                            }
+                                            value={email}
                                             className="w-full  bg-[#161C1B] border border-[#1e2927] rounded-lg px-4 py-2.5 text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
                                             placeholder="ritish@gmail.com"
                                             type="email"
@@ -69,6 +109,10 @@ const ContactPage = () => {
                                         Subject
                                     </label>
                                     <input
+                                        onChange={(e) =>
+                                            setSubject(e.target.value)
+                                        }
+                                        value={subject}
                                         className="w-full  bg-[#161C1B] border border-[#1e2927] rounded-lg px-4 py-2.5 text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
                                         placeholder="Subject"
                                         type="text"
@@ -79,6 +123,10 @@ const ContactPage = () => {
                                         Message
                                     </label>
                                     <textarea
+                                        onChange={(e) =>
+                                            setMessage(e.target.value)
+                                        }
+                                        value={message}
                                         className="w-full  bg-[#161C1B] border border-[#1e2927] rounded-lg px-4 py-2.5 text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-none"
                                         placeholder="How can we help?"
                                         rows="4"
@@ -107,7 +155,7 @@ const ContactPage = () => {
                             {/* LINKS START */}
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                 {/* LINK  */}
-                                {socialLinks.map((link,index) => {
+                                {socialLinks.map((link, index) => {
                                     return (
                                         <a
                                             className="flex flex-col items-center justify-center p-6 rounded-xl border border-[#1e2927] bg-[#161c1b4d] hover:bg-[#161C1B] transition-all group"

@@ -115,7 +115,7 @@ export const PortfolioProvider = ({ children }) => {
             { name: "Github", url: "https://github.com/Ritish-Sharma-Dev" },
             { name: "X / Twitter", url: "https://x.com/Ritish__Sharma" },
             { name: "Instagram", url: "https://instagram.com/ritish.sharma._" },
-            { name: "LeetCode", url: "https://leetcode.com/u/Ritish__Sharma/" },
+            { name: "LeetCode", url: "https://leetcode.com/u/ritish-sharma-dev/" },
         ],
     };
 
