@@ -14,7 +14,7 @@ function App() {
     return (
         <>
             <Toaster position="top-center" containerStyle={{top: 60}} />
-            <div className="max-w-360 m-auto bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+            <div className="@container max-w-360 m-auto bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
                 <BrowserRouter>
                     <Navbar/>
                     <ScrollToTop />
