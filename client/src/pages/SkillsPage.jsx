@@ -12,7 +12,7 @@ const SkillsPage = () => {
                 <div className="max-w-4xl  px-4 lg:px-12 py-12">
                     {/* HEADER START */}
                     <div className="mb-10">
-                        <nav className="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400  mb-4">
+                        <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                             <span>Docs</span>
                             <span className="material-symbols-outlined text-sm">
                                 chevron_right
@@ -22,7 +22,7 @@ const SkillsPage = () => {
                         <h1 className="text-4xl font-bold tracking-tight mb-4">
                             Skills
                         </h1>
-                        <p className="max-md:text-md  text-lg  text-slate-600 dark:text-slate-400  leading-relaxed">
+                        <p className="max-md:text-md  text-lg  text-slate-400  leading-relaxed">
                             These Skills of mine defines the technical expertise
                             and the level of proficiency in various
                             technologies. It provides structured information

@@ -12,7 +12,7 @@ const ProjectsPage = () => {
                 <div className="max-w-4xl  px-4 lg:px-12 py-12">
                     <div className="mb-10">
                         {/* HEADER START */}
-                        <nav className="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400  mb-4">
+                        <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                             <span>Docs</span>
                             <span className="material-symbols-outlined text-sm">
                                 chevron_right
@@ -26,7 +26,7 @@ const ProjectsPage = () => {
                         </h1>
                         {/* PAGE HEADING END */}
                         {/* PAGE DESCRIPTION START  */}
-                        <p className="text-lg text-slate-600 dark:text-slate-400  leading-relaxed">
+                        <p className="text-lg text-slate-400  leading-relaxed">
                             The Projects object allows you to manage and
                             interact with technical implementations. Each
                             project contains architectural metadata, deployment
@@ -120,7 +120,7 @@ const ProjectsPage = () => {
                         ))}
 
                         {/* VIEW MORE PROJECTS BUTTON START */}
-                        <div className="mt-2 pt-2 px-2 dark:border-primary/10">
+                        <div className="mt-2 pt-2 px-2 border-primary/10">
                             <a
                                 href="https://github.com/ritish-sharma-dev"
                                 className="inline-flex items-center justify-start gap-1 text-slate-500 hover:text-primary group"

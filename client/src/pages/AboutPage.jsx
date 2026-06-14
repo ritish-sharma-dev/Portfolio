@@ -4,10 +4,10 @@ const AboutPage = () => {
     return (
         <>
             {/* ABOUT PAGE START  */}
-            <main className="flex-1 overflow-y-auto custom-scrollbar bg-white dark:bg-background-dark">
+            <main className="flex-1 overflow-y-auto custom-scrollbar bg-background-dark">
                 <div className="max-w-3xl px-4 md:px-12 py-12">
                     {/* HEADER START*/}
-                    <nav className="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400  mb-4">
+                    <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                         <span>Docs</span>
                         <span className="material-symbols-outlined text-sm">
                             chevron_right
@@ -23,7 +23,7 @@ const AboutPage = () => {
                         </h1>
                         {/* HEADING END - ABOUT ME */}
                         {/* HEADING DESCRIPTION START */}
-                        <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-10">
+                        <p className="text-lg text-slate-400 leading-relaxed mb-10">
                             I am a passionate Software Engineer with a strong
                             foundation in computer science and a keen interest
                             in building innovative and user-centric
@@ -32,7 +32,7 @@ const AboutPage = () => {
                             to meaningful projects.
                         </p>
                         {/* HEADING DESCRIPTION END */}
-                        <hr className="border-slate-200 dark:border-primary/10 mb-10" />
+                        <hr className="border-primary/10 mb-10" />
                         {/* HEADING START - PERSONAL STORY */}
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                             <span className="material-symbols-outlined text-primary">
@@ -42,7 +42,7 @@ const AboutPage = () => {
                         </h2>
                         {/* HEADING END -  PERSONAL STORY */}
                         {/* HEADING DESCRIPTION START */}
-                        <div className="prose dark:prose-invert text-slate-600 dark:text-slate-400 space-y-4">
+                        <div className="prose prose-invert text-slate-400 space-y-4">
                             <p>
                                 My journey into software development began with
                                 a curious fascination for how things work under
@@ -75,41 +75,41 @@ const AboutPage = () => {
                         {/* HEADING END - CORE VALUES */}
                         {/* CORE VALUES START */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="p-5 rounded-xl border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-primary/5">
-                                <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-2">
+                            <div className="p-5 rounded-xl border border-primary/20 bg-primary/5">
+                                <h3 className="font-bold text-slate-100 mb-2">
                                     Simplicity First
                                 </h3>
-                                <p className="text-sm text-slate-600 dark:text-slate-400">
+                                <p className="text-sm text-slate-400">
                                     I believe that the best solutions are often
                                     the simplest. I strive for code that is
                                     readable, maintainable, and elegant.
                                 </p>
                             </div>
-                            <div className="p-5 rounded-xl border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-primary/5">
-                                <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-2">
+                            <div className="p-5 rounded-xl border border-primary/20 bg-primary/5">
+                                <h3 className="font-bold text-slate-100 mb-2">
                                     User-Centricity
                                 </h3>
-                                <p className="text-sm text-slate-600 dark:text-slate-400">
+                                <p className="text-sm text-slate-400">
                                     Technology serves people. I always keep the
                                     end-user's experience at the forefront of
                                     every technical decision.
                                 </p>
                             </div>
-                            <div className="p-5 rounded-xl border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-primary/5">
-                                <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-2">
+                            <div className="p-5 rounded-xl border border-primary/20 bg-primary/5">
+                                <h3 className="font-bold text-slate-100 mb-2">
                                     Continuous Learning
                                 </h3>
-                                <p className="text-sm text-slate-600 dark:text-slate-400">
+                                <p className="text-sm text-slate-400">
                                     The landscape of tech is ever-changing. I
                                     dedicate time every day to mastering new
                                     tools and methodologies.
                                 </p>
                             </div>
-                            <div className="p-5 rounded-xl border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-primary/5">
-                                <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-2">
+                            <div className="p-5 rounded-xl border border-primary/20 bg-primary/5">
+                                <h3 className="font-bold text-slate-100 mb-2">
                                     Radical Transparency
                                 </h3>
-                                <p className="text-sm text-slate-600 dark:text-slate-400">
+                                <p className="text-sm text-slate-400">
                                     Open communication is the bedrock of
                                     successful teams. I value honest feedback
                                     and clear documentation.
@@ -127,7 +127,7 @@ const AboutPage = () => {
                         {/* HEADING END - PROFESSIONAL PHILOSOPHY */}
                         {/* HEADING DESCRIPTION START */}
                         <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg">
-                            <p className="italic text-slate-700 dark:text-slate-300">
+                            <p className="italic text-slate-300">
                                 "I don't just write code; I design systems that
                                 empower growth. My philosophy is rooted in the
                                 belief that software should be an invisible

@@ -7,14 +7,14 @@ const EducationPage = () => {
 
     return (
         <>
-            <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+            <div className="bg-background-dark text-slate-100 antialiased">
                 <div className="mx-auto flex">
                     {/* MAIN CONTENT START  */}
                     <main className="flex-1 min-w-0 overflow-y-auto px-4 py-12 lg:px-12">
                         <div className="max-w-3xl">
                             <div className="mb-10">
                                 {/* HEADER START */}
-                                <nav className="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400  mb-4">
+                                <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                                     <span>Docs</span>
                                     <span className="material-symbols-outlined text-sm">
                                         chevron_right
@@ -30,7 +30,7 @@ const EducationPage = () => {
                                 </h1>
                                 {/* PAGE HEADING END */}
                                 {/* PAGE DESCRIPTION START*/}
-                                <p className="text-lg text-slate-600 dark:text-slate-400  leading-relaxed">
+                                <p className="text-lg text-slate-400  leading-relaxed">
                                     A historical record of academic
                                     qualifications, institutional honors, and
                                     professional learning paths.
@@ -45,12 +45,12 @@ const EducationPage = () => {
                                         <div
                                         key={index}
                                         className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-                                            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-primary bg-background-light dark:bg-background-dark text-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                                            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-primary bg-background-dark text-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                                                 <span className="material-symbols-outlined">
                                                     school
                                                 </span>
                                             </div>
-                                            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-slate-200 dark:border-primary/10 bg-white dark:bg-primary/5 hover:border-primary/40 transition-colors">
+                                            <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-primary/10 bg-primary/5 hover:border-primary/40 transition-colors">
                                                 <div className="flex items-center justify-between mb-1">
                                                     <time className="text-xs font-bold text-primary ">
                                                         {education.duration}
@@ -59,10 +59,10 @@ const EducationPage = () => {
                                                 <h3 className="text-lg font-bold">
                                                     {education.degree}
                                                 </h3>
-                                                <p className="text-sm text-slate-500 dark:text-primary/70 mb-2">
+                                                <p className="text-sm text-primary/70 mb-2">
                                                     {education.institution}
                                                 </p>
-                                                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                                <p className="text-sm text-slate-400 leading-relaxed">
                                                     {education.description}
                                                 </p>
                                                 <div className="mt-4 flex flex-wrap gap-2">

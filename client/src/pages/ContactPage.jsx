@@ -41,7 +41,7 @@ const ContactPage = () => {
             <div className=" flex overflow-hidden">
                 <section className="flex-1 max-w-3xl px-4 py-12 lg:px-12 overflow-y-auto">
                     {/* HEADER START */}
-                    <nav className="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400  mb-4">
+                    <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                         <span>Docs</span>
                         <span className="material-symbols-outlined text-sm">
                             chevron_right

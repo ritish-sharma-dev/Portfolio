@@ -84,7 +84,7 @@ const Card2 = () => {
                 </pre>
             </div>
 
-            <div className="mt-1 pt-1 px-1 dark:border-primary/10">
+            <div className="mt-1 pt-1 px-1 border-primary/10">
                 <NavLink to="/contact" className="flex flex-col gap-1 ">
                     <div className="flex items-center justify-start gap-1">
                         <span className="font-medium text-[9px] md:text-[10px] font-mono text-slate-500 uppercase tracking-widest">
