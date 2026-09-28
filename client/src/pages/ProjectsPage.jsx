@@ -8,7 +8,7 @@ const ProjectsPage = () => {
     return (
         <>
             {/*  PROJECTS PAGE START */}
-            <main className="flex-1 overflow-y-auto bg-background-dark lg:bg-background-dark scroll-smooth">
+            <main className="flex-1 overflow-y-auto bg-transparent lg:bg-transparent scroll-smooth">
                 <div className="max-w-4xl  px-4 lg:px-12 py-12">
                     <div className="mb-10">
                         {/* HEADER START */}

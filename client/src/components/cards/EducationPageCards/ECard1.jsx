@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router'
+import TypingCode from '../../TypingCode'
 
 const ECard1 = () => {
   return (
-    <div className="max-md:hidden p-4 md:p-8 space-y-4 md:py-12 flex-1 bg-[#0d1117]  rounded-xl overflow-hidden font-sans">
+    <div className="max-md:hidden p-4 md:p-8 space-y-4 md:py-12 flex-1  rounded-xl overflow-hidden font-sans">
             {/* Header: Endpoint Info */}
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
@@ -28,9 +29,9 @@ const ECard1 = () => {
             </div>
 
             {/* Main Code Block - whitespace-pre-wrap prevents scrolling */}
-            <div className="p-4 md:p-6 rounded-lg bg-[#010409] border border-white/5 shadow-2xl overflow-hidden">
-              <pre className="text-[min(2.7vw,13px)] md:text-[13px] leading-5 md:leading-6 font-mono text-slate-300 whitespace-pre-wrap break-words">
-                <code>
+            <div className="p-4 md:p-6 rounded-lg bg-[#010409]/80 border border-white/5 shadow-2xl overflow-hidden">
+              <pre className="code-typing text-[min(2.7vw,13px)] md:text-[13px] leading-5 md:leading-6 font-mono text-slate-300 whitespace-pre-wrap break-words">
+                <TypingCode>
                   {'{'}{'\n'}
                   {'  '}<span className="text-blue-300">"status"</span>: <span className="text-emerald-400">"success"</span>,{'\n'}
                   {'  '}<span className="text-blue-300">"data"</span>: {'{'}{'\n'}
@@ -42,7 +43,7 @@ const ECard1 = () => {
                   {'    '}<span className="text-blue-300">"responseTime"</span>: <span className="text-blue-400">"&lt; 24h"</span>{'\n'}
                   {'  '}{'}'}{'\n'}
                   {'}'}
-                </code>
+                </TypingCode>
               </pre>
             </div>
           </div>

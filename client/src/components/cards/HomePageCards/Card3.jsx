@@ -1,6 +1,7 @@
 import React from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import TypingCode from "../../TypingCode";
 
 const Card3 = () => {
     return (
@@ -46,7 +47,8 @@ const Card3 = () => {
                     </div>
 
                     {/* Code Area - All content restored and made responsive */}
-                    <div className="grow pl-4 sm:pl-6 text-slate-300 overflow-hidden whitespace-pre-wrap break-words">
+                    <div className="code-typing grow pl-4 sm:pl-6 text-slate-300 overflow-hidden whitespace-pre-wrap break-words">
+                        <TypingCode as="div">
                         <div>
                             <span className="text-purple-400">#include</span>{" "}
                             <span className="text-emerald-400">
@@ -154,6 +156,7 @@ const Card3 = () => {
                             <span className="text-orange-400">0</span>;
                         </div>
                         <div>{"}"}</div>
+                        </TypingCode>
                     </div>
                 </div>
             </div>

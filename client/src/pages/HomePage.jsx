@@ -139,7 +139,7 @@ const HomePage = () => {
                     </div>
                 </div>
                 {/* RIGHT SIDE CODE START*/}
-                <div className="flex-1 bg-[#0d1117] min-h-96 rounded-xl overflow-hidden font-sans">
+                <div className="flex-1  min-h-96 rounded-xl overflow-hidden font-sans">
                     <Card4 />
                     <Card2 />
                 </div>

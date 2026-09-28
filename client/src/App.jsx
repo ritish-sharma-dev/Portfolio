@@ -9,12 +9,14 @@ import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import GalaxyStars from "./components/GalaxyStars";
 
 function App() {
     return (
         <>
             <Toaster position="top-center" containerStyle={{top: 60}} />
-            <div className="@container max-w-360 m-auto bg-background-dark text-slate-100 antialiased">
+            <GalaxyStars />
+            <div className="relative z-10 @container max-w-360 m-auto bg-transparent text-slate-100 antialiased">
                 <BrowserRouter>
                     <Navbar/>
                     <ScrollToTop />

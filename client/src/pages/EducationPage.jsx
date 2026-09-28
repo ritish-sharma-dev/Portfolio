@@ -7,7 +7,7 @@ const EducationPage = () => {
 
     return (
         <>
-            <div className="bg-background-dark text-slate-100 antialiased">
+            <div className="bg-transparent text-slate-100 antialiased">
                 <div className="mx-auto flex">
                     {/* MAIN CONTENT START  */}
                     <main className="flex-1 min-w-0 overflow-y-auto px-4 py-12 lg:px-12">

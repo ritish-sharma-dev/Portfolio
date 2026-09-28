@@ -4,7 +4,7 @@ const AboutPage = () => {
     return (
         <>
             {/* ABOUT PAGE START  */}
-            <main className="flex-1 overflow-y-auto custom-scrollbar bg-background-dark">
+            <main className="flex-1 overflow-y-auto custom-scrollbar bg-transparent">
                 <div className="max-w-3xl px-4 md:px-12 py-12">
                     {/* HEADER START*/}
                     <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">

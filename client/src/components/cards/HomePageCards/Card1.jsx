@@ -1,4 +1,5 @@
 import React from "react";
+import TypingCode from "../../TypingCode";
 
 const Card1 = () => {
     return (
@@ -23,8 +24,8 @@ const Card1 = () => {
 
                 {/* Main Code Block - Added scale-90 for mobile and removed overflow-x-auto */}
                 <div className="p-4 md:p-6 rounded-lg bg-[#010409] border border-white/5 overflow-hidden shadow-2xl transition-all duration-300 origin-top">
-                    <pre className="text-[11px] md:text-[13px] leading-5 md:leading-6 font-mono text-slate-300 whitespace-pre-wrap break-words">
-                        <code>
+                    <pre className="code-typing text-[11px] md:text-[13px] leading-5 md:leading-6 font-mono text-slate-300 whitespace-pre-wrap break-words">
+                        <TypingCode>
                             <span className="text-purple-400">import</span>{" "}
                             {"{ "}
                             <span className="text-blue-300">FC</span>,{" "}
@@ -106,7 +107,7 @@ const Card1 = () => {
                             {"\n"}
                             {"  "});{"\n"}
                             {"}"};
-                        </code>
+                        </TypingCode>
                     </pre>
                 </div>
             </div>

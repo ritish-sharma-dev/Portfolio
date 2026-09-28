@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router";
+import TypingCode from "../../TypingCode";
 
 const Card2 = () => {
     return (
-        <div className="p-4 md:p-8 space-y-4 md:space-y-8 flex-1 bg-[#0d1117] min-h-[400px] rounded-xl overflow-hidden font-sans">
+        <div className="p-4 md:p-8 space-y-4 md:space-y-8 flex-1  min-h-[400px] rounded-xl overflow-hidden font-sans">
             {/* Header: Endpoint Info */}
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -28,9 +29,9 @@ const Card2 = () => {
             </div>
 
             {/* Main Code Block - whitespace-pre-wrap prevents scrolling */}
-            <div className="p-4 md:p-6 rounded-lg bg-[#010409] border border-white/5 shadow-2xl overflow-hidden">
-                <pre className="text-[min(2.7vw,13px)] md:text-[13px] leading-5 md:leading-6 font-mono text-slate-300 whitespace-pre-wrap break-words">
-                    <code>
+            <div className="p-4 md:p-6 rounded-lg bg-[#010409]/80 border border-white/5 shadow-2xl overflow-hidden">
+                <pre className="code-typing text-[min(2.7vw,13px)] md:text-[13px] leading-5 md:leading-6 font-mono text-slate-300 whitespace-pre-wrap break-words">
+                    <TypingCode>
                         {"{"}
                         {"\n"}
                         {"  "}
@@ -80,7 +81,7 @@ const Card2 = () => {
                         {"}"}
                         {"\n"}
                         {"}"}
-                    </code>
+                    </TypingCode>
                 </pre>
             </div>
 

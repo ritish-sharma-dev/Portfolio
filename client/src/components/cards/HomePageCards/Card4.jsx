@@ -1,12 +1,13 @@
 import React from "react";
+import TypingCode from "../../TypingCode";
 
 const Card4 = () => {
     return (
         <div className="max-md:hidden p-2 sm:p-4 md:p-8 flex items-center justify-center min-h-fit">
             {/* Main Card Container */}
-            <div className="w-full max-w-2xl bg-[#010409] border border-white/10 rounded-lg shadow-2xl overflow-hidden font-mono flex flex-col">
+            <div className="w-full max-w-2xl bg-[#010409]/75 border border-white/10 rounded-lg shadow-2xl overflow-hidden font-mono flex flex-col">
                 {/* Header: File Info & Mac Controls */}
-                <div className="flex items-center justify-between px-4 py-3 bg-[#0d1117] border-b border-white/5 shrink-0">
+                <div className="flex items-center justify-between px-4 py-3 bg-[#0d1117]/75 border-b border-white/5 shrink-0">
                     <div className="flex items-center gap-2">
                         <div className="flex gap-1.5">
                             <span className="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
@@ -44,7 +45,8 @@ const Card4 = () => {
                     </div>
 
                     {/* Code Area - All content restored and made responsive */}
-                    <div className="grow pl-4 sm:pl-6 text-slate-300 overflow-hidden whitespace-pre-wrap break-words">
+                    <div className="code-typing grow pl-4 sm:pl-6 text-slate-300 overflow-hidden whitespace-pre-wrap break-words">
+                        <TypingCode as="div">
                         <div>
                             <span className="text-purple-400">#include</span>{" "}
                             <span className="text-emerald-400">
@@ -152,6 +154,7 @@ const Card4 = () => {
                             <span className="text-orange-400">0</span>;
                         </div>
                         <div>{"}"}</div>
+                        </TypingCode>
                     </div>
                 </div>
             </div>

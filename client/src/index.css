@@ -27,5 +27,89 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: #0a0f0d;
+    background: radial-gradient(circle at 50% -10%, #123c35 0%, #0a0f0d 42%, #050807 100%);
+    background-attachment: fixed;
+}
+
+.galaxy-stars {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.code-typing {
+    caret-color: #10b77f;
+}
+
+.code-character {
+    opacity: 0;
+}
+
+.code-typing.is-visible .code-character {
+    animation: code-character-write 0.01s linear var(--character-delay) forwards;
+}
+
+@keyframes code-character-write {
+    to {
+        opacity: 1;
+    }
+}
+
+.code-execution > div {
+    border-radius: 0.2rem;
+    opacity: 0;
+    transform: translateY(0.2rem);
+    animation: code-line-write 0.42s ease-out forwards;
+}
+
+.code-execution > div:nth-child(1) { animation-delay: 0s; }
+.code-execution > div:nth-child(2) { animation-delay: 0.16s; }
+.code-execution > div:nth-child(3) { animation-delay: 0.32s; }
+.code-execution > div:nth-child(4) { animation-delay: 0.48s; }
+.code-execution > div:nth-child(5) { animation-delay: 0.64s; }
+.code-execution > div:nth-child(6) { animation-delay: 0.8s; }
+.code-execution > div:nth-child(7) { animation-delay: 0.96s; }
+.code-execution > div:nth-child(8) { animation-delay: 1.12s; }
+.code-execution > div:nth-child(9) { animation-delay: 1.28s; }
+.code-execution > div:nth-child(10) { animation-delay: 1.44s; }
+.code-execution > div:nth-child(11) { animation-delay: 1.6s; }
+.code-execution > div:nth-child(12) { animation-delay: 1.76s; }
+.code-execution > div:nth-child(13) { animation-delay: 1.92s; }
+.code-execution > div:nth-child(14) { animation-delay: 2.08s; }
+.code-execution > div:nth-child(15) { animation-delay: 2.24s; }
+
+@keyframes code-line-write {
+    from {
+        background-color: rgb(16 183 127 / 0.14);
+        box-shadow: inset 2px 0 #10b77f;
+        opacity: 0;
+        transform: translateY(0.2rem);
+    }
+
+    to {
+        background-color: transparent;
+        box-shadow: inset 0 0 transparent;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .galaxy-stars {
+        opacity: 0.65;
+    }
+
+    .code-execution > div {
+        animation: none;
+        opacity: 1;
+    }
+
+    .code-character {
+        animation: none;
+        opacity: 1;
+    }
 }
