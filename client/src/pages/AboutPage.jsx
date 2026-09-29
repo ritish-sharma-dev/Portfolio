@@ -1,4 +1,5 @@
 import React from "react";
+import { BadgeCheck, Brain, ChevronRight, History } from "lucide-react";
 
 const AboutPage = () => {
     return (
@@ -9,9 +10,7 @@ const AboutPage = () => {
                     {/* HEADER START*/}
                     <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                         <span>Docs</span>
-                        <span className="material-symbols-outlined text-sm">
-                            chevron_right
-                        </span>
+                        <ChevronRight className="h-4 w-4" aria-hidden="true" />
                         <span className="text-primary">About</span>
                     </nav>
                     {/* HEADER END */}
@@ -35,9 +34,7 @@ const AboutPage = () => {
                         <hr className="border-primary/10 mb-10" />
                         {/* HEADING START - PERSONAL STORY */}
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                            <span className="material-symbols-outlined text-primary">
-                                history
-                            </span>
+                            <History className="h-6 w-6 text-primary" aria-hidden="true" />
                             Personal Story
                         </h2>
                         {/* HEADING END -  PERSONAL STORY */}
@@ -67,9 +64,7 @@ const AboutPage = () => {
                         {/* HEADING DESCRIPTION END */}
                         {/* HEADING START - CORE VALUES */}
                         <h2 className="text-2xl font-bold mt-12 mb-6 flex items-center gap-2">
-                            <span className="material-symbols-outlined text-primary">
-                                verified
-                            </span>
+                            <BadgeCheck className="h-6 w-6 text-primary" aria-hidden="true" />
                             Core Values
                         </h2>
                         {/* HEADING END - CORE VALUES */}
@@ -119,9 +114,7 @@ const AboutPage = () => {
                         {/* CORE VALUES END */}
                         {/* HEADING START - PROFESSIONAL PHILOSOPHY */}
                         <h2 className="text-2xl font-bold mt-12 mb-6 flex items-center gap-2">
-                            <span className="material-symbols-outlined text-primary">
-                                psychology
-                            </span>
+                            <Brain className="h-6 w-6 text-primary" aria-hidden="true" />
                             Professional Philosophy
                         </h2>
                         {/* HEADING END - PROFESSIONAL PHILOSOPHY */}

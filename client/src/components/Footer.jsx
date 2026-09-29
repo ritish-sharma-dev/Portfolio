@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
+import { Coffee, Heart, Send, Terminal } from "lucide-react";
 
 const Footer = () => {
     const { pageLinks, socialLinks } = useContext(PortfolioContext);
@@ -16,9 +17,7 @@ const Footer = () => {
                         <div className="lg:col-span-4 flex flex-col gap-6">
                             <div className="flex items-center gap-3">
                                 <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary">
-                                    <span className="material-symbols-outlined text-[20px] font-bold">
-                                        terminal
-                                    </span>
+                                    <Terminal className="h-5 w-5" aria-hidden="true" />
                                 </div>
                                 <span className="text-xl font-bold tracking-tight text-white">
                                     Ritish_Sharma
@@ -42,13 +41,14 @@ const Footer = () => {
                                 <ul className="flex flex-col gap-3">
                                     {pageLinks.map((link, index) => {
                                         return (
-                                            <NavLink
-                                                className="text-slate-400 hover:text-primary transition-colors text-sm"
-                                                key={index}
-                                                to={link.href}
-                                            >
-                                                {link.name}
-                                            </NavLink>
+                                            <li key={index}>
+                                                <NavLink
+                                                    className="text-slate-400 hover:text-primary transition-colors text-sm"
+                                                    to={link.href}
+                                                >
+                                                    {link.name}
+                                                </NavLink>
+                                            </li>
                                         );
                                     })}
                                 </ul>
@@ -61,13 +61,14 @@ const Footer = () => {
                                 <ul className="flex flex-col gap-3">
                                     {socialLinks.map((link, index) => {
                                         return (
-                                            <a
-                                                className="text-slate-400 hover:text-primary transition-colors text-sm"
-                                                key={index}
-                                                href={link.url}
-                                            >
-                                                {link.name}
-                                            </a>
+                                            <li key={index}>
+                                                <a
+                                                    className="text-slate-400 hover:text-primary transition-colors text-sm"
+                                                    href={link.url}
+                                                >
+                                                    {link.name}
+                                                </a>
+                                            </li>
                                         );
                                     })}
                                 </ul>
@@ -93,9 +94,7 @@ const Footer = () => {
                                     type="submit"
                                 >
                                     Get in touch
-                                    <span className="material-symbols-outlined text-xl">
-                                        send
-                                    </span>
+                                    <Send className="h-5 w-5" aria-hidden="true" />
                                 </NavLink>
                             </div>
                         </div>
@@ -105,13 +104,9 @@ const Footer = () => {
                         <div className="flex items-center gap-4">
                             <div className="flex items-center gap-1.5 px-3 py-1.5 bg-white/5 rounded-full border border-white/5 text-[11px] font-medium text-text-grey">
                                 <span>Made with</span>
-                                <span className="material-symbols-outlined text-rose-500 text-xs fill-icon">
-                                    favorite
-                                </span>
+                                <Heart className="h-3 w-3 fill-current text-rose-500" aria-hidden="true" />
                                 <span>and</span>
-                                <span className="material-symbols-outlined text-primary text-xs fill-icon">
-                                    coffee
-                                </span>
+                                <Coffee className="h-3 w-3 fill-current text-primary" aria-hidden="true" />
                             </div>
                         </div>
                     </div>

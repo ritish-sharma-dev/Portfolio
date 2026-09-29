@@ -4,6 +4,8 @@ import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 import toast from "react-hot-toast";
 import axios from "axios";
+import { Toaster } from "react-hot-toast";
+import { ChevronRight, Rocket, Send } from "lucide-react";
 
 const ContactPage = () => {
     const { socialLinks } = useContext(PortfolioContext);
@@ -37,15 +39,14 @@ const ContactPage = () => {
 
     return (
         <>
+            <Toaster position="top-center" containerStyle={{ top: 60 }} />
             {/* CONTACT PAGE START */}
             <div className="relative min-h-[calc(100vh-4rem)] flex overflow-hidden bg-transparent">
                 <section className="flex-1 max-w-3xl px-4 py-12 lg:px-12 overflow-y-auto">
                     {/* HEADER START */}
                     <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                         <span>Docs</span>
-                        <span className="material-symbols-outlined text-sm">
-                            chevron_right
-                        </span>
+                        <ChevronRight className="h-4 w-4" aria-hidden="true" />
                         <span className="text-primary">Contact</span>
                     </nav>
                     {/* HEADER END */}
@@ -64,9 +65,7 @@ const ContactPage = () => {
                         {/* FORM SECTION START*/}
                         <div className="bg-[#161c1b99] p-8 rounded-2xl border border-[#1e2927] shadow-xl backdrop-blur-sm">
                             <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                                <span className="material-symbols-outlined text-primary">
-                                    send
-                                </span>
+                                <Send className="h-5 w-5 text-primary" aria-hidden="true" />
                                 Send a Message
                             </h2>
                             {/* FORM START */}
@@ -137,9 +136,7 @@ const ContactPage = () => {
                                     type="submit"
                                 >
                                     Send Message
-                                    <span className="material-symbols-outlined text-sm">
-                                        rocket_launch
-                                    </span>
+                                    <Rocket className="h-4 w-4" aria-hidden="true" />
                                 </button>
                             </form>
                             {/* FORM END */}

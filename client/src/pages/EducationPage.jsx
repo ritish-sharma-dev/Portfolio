@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
+import { ChevronRight, GraduationCap } from "lucide-react";
 
 const EducationPage = () => {
     const { education } = useContext(PortfolioContext);
@@ -16,9 +17,7 @@ const EducationPage = () => {
                                 {/* HEADER START */}
                                 <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                                     <span>Docs</span>
-                                    <span className="material-symbols-outlined text-sm">
-                                        chevron_right
-                                    </span>
+                                    <ChevronRight className="h-4 w-4" aria-hidden="true" />
                                     <span className="text-primary">
                                         Education
                                     </span>
@@ -46,9 +45,7 @@ const EducationPage = () => {
                                         key={index}
                                         className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                                             <div className="flex items-center justify-center w-10 h-10 rounded-full border border-primary bg-background-dark text-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                                                <span className="material-symbols-outlined">
-                                                    school
-                                                </span>
+                                                <GraduationCap aria-hidden="true" />
                                             </div>
                                             <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-primary/10 bg-primary/5 hover:border-primary/40 transition-colors">
                                                 <div className="flex items-center justify-between mb-1">

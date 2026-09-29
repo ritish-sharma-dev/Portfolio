@@ -1,0 +1,12 @@
+# Ritish Sharma
+
+> Portfolio of Ritish Sharma, a software engineer building high-performance web applications and distributed systems.
+
+## Website
+
+- [Home](/): Introduction and software engineering profile.
+- [About](/about): Background, values, and professional philosophy.
+- [Projects](/projects): Technical projects and source references.
+- [Skills](/skills): Programming languages, frameworks, tools, and platforms.
+- [Education](/education): Academic qualifications and learning history.
+- [Contact](/contact): Contact form and social channels.

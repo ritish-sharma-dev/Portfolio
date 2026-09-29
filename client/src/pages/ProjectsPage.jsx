@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
+import { ArrowRight, ChevronRight, Code2, ExternalLink } from "lucide-react";
 
 const ProjectsPage = () => {
     const { projects } = useContext(PortfolioContext);
@@ -14,9 +15,7 @@ const ProjectsPage = () => {
                         {/* HEADER START */}
                         <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                             <span>Docs</span>
-                            <span className="material-symbols-outlined text-sm">
-                                chevron_right
-                            </span>
+                            <ChevronRight className="h-4 w-4" aria-hidden="true" />
                             <span className="text-primary">Projects</span>
                         </nav>
                         {/* HEADER END */}
@@ -87,9 +86,7 @@ const ProjectsPage = () => {
                                         {/* ACTION LINKS START*/}
                                         <div className="flex flex-row items-center gap-6 md:gap-5 pt-4 md:pt-6">
                                             <div className="flex gap-1">
-                                                <span className="material-symbols-outlined text-primary text-lg">
-                                                    link
-                                                </span>
+                                                <ExternalLink className="h-5 w-5 text-primary" aria-hidden="true" />
                                                 <a
                                                     href={project.viewDemoLink}
                                                     className="flex items-center gap-1 text-xs lg:text-sm font-black uppercase tracking-widest text-white group/link"
@@ -105,9 +102,7 @@ const ProjectsPage = () => {
                                                     }
                                                     className="flex items-center gap-1 text-xs lg:text-sm font-black uppercase tracking-widest text-slate-500 hover:text-white transition-colors"
                                                 >
-                                                    <span className="material-symbols-outlined text-lg">
-                                                        code
-                                                    </span>
+                                                    <Code2 className="h-5 w-5" aria-hidden="true" />
                                                     Github
                                                 </a>
                                             </div>
@@ -126,9 +121,7 @@ const ProjectsPage = () => {
                                 className="inline-flex items-center justify-start gap-1 text-slate-500 hover:text-primary group"
                             >
                                 <span className="font-medium">View More</span>
-                                <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">
-                                    arrow_forward
-                                </span>
+                                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                             </a>
                         </div>
                         {/* VIEW MORE PROJECTS BUTTON END */}

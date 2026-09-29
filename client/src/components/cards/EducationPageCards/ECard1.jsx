@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router'
 import TypingCode from '../../TypingCode'
+import { Link2 } from 'lucide-react'
 
 const ECard1 = () => {
   return (
@@ -8,17 +9,7 @@ const ECard1 = () => {
             {/* Header: Endpoint Info */}
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                {/* Using a standard SVG for the API icon to ensure compatibility */}
-                <svg
-                  viewBox="0 0 24 24"
-                  className="w-4 h-4 text-slate-400"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                </svg>
+                <Link2 className="h-4 w-4 text-slate-400" aria-hidden="true" />
                 <span className="text-[11px] md:text-xs font-mono text-slate-400 tracking-tight">
                   POST /api/v1/contact
                 </span>

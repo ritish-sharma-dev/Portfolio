@@ -3,6 +3,14 @@ import { NavLink } from "react-router";
 import Card2 from "../components/cards/HomePageCards/Card2";
 import Card3 from "../components/cards/HomePageCards/Card3";
 import Card4 from "../components/cards/HomePageCards/Card4";
+import {
+    ArrowRight,
+    ChevronRight,
+    Code2,
+    Download,
+    ExternalLink,
+    MessageCircle,
+} from "lucide-react";
 
 const HomePage = () => {
     return (
@@ -14,9 +22,7 @@ const HomePage = () => {
                     <header className="relative top-0 z-10 bg-background-dark/80 backdrop-blur-md px-8 py-4 border-b border-primary/5 flex items-center justify-between">
                         <div className="flex items-center gap-2 text-xs font-medium text-slate-400">
                             <span>Docs</span>
-                            <span className="material-symbols-outlined text-[14px]">
-                                chevron_right
-                            </span>
+                            <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
                             <span className="text-primary">Introduction</span>
                         </div>
                         <div className="flex items-center gap-4">
@@ -65,9 +71,7 @@ const HomePage = () => {
                                     className="mt-auto pt-6  border-primary/10"
                                 >
                                     <button className="w-full flex items-center justify-center gap-2 bg-primary text-background-dark px-4 py-2.5 rounded font-bold text-sm hover:opacity-90 transition-opacity">
-                                        <span className="material-symbols-outlined text-[18px]">
-                                            download
-                                        </span>
+                                        <Download className="h-4.5 w-4.5" aria-hidden="true" />
                                         Resume
                                     </button>
                                 </a>
@@ -86,9 +90,7 @@ const HomePage = () => {
                                 <div className="p-6 rounded-xl border border-primary/10 bg-background-dark shadow-sm hover:shadow-md transition-shadow group">
                                     <div className="flex justify-between items-start mb-4">
                                         <div className="w-10 h-10 rounded bg-primary/10 flex items-center justify-center text-primary">
-                                            <span className="material-symbols-outlined">
-                                                chat
-                                            </span>
+                                            <MessageCircle aria-hidden="true" />
                                         </div>
                                         <div className="flex gap-2">
                                             <a
@@ -96,18 +98,14 @@ const HomePage = () => {
                                                 className="text-slate-400 hover:text-primary"
                                                 href="https://chat-sigma-one-26.vercel.app/login"
                                             >
-                                                <span className="material-symbols-outlined text-[20px]">
-                                                    link
-                                                </span>
+                                                <ExternalLink className="h-5 w-5" aria-hidden="true" />
                                             </a>
                                             <a
                                                 title="Code"
                                                 className="text-slate-400 hover:text-primary"
                                                 href="https://github.com/Ritish-Sharma-Dev/Chat-App"
                                             >
-                                                <span className="material-symbols-outlined text-[20px]">
-                                                    code
-                                                </span>
+                                                    <Code2 className="h-5 w-5" aria-hidden="true" />
                                             </a>
                                         </div>
                                     </div>
@@ -129,9 +127,7 @@ const HomePage = () => {
                                     <span className="font-medium">
                                         View More
                                     </span>
-                                    <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">
-                                        arrow_forward
-                                    </span>
+                                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                                 </NavLink>
                             </div>
                         </section>

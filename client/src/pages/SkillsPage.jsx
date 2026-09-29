@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
+import { ChevronRight } from "lucide-react";
 
 const SkillsPage = () => {
     const { skills } = useContext(PortfolioContext);
@@ -14,9 +15,7 @@ const SkillsPage = () => {
                     <div className="mb-10">
                         <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                             <span>Docs</span>
-                            <span className="material-symbols-outlined text-sm">
-                                chevron_right
-                            </span>
+                            <ChevronRight className="h-4 w-4" aria-hidden="true" />
                             <span className="text-primary">Skills</span>
                         </nav>
                         <h1 className="text-4xl font-bold tracking-tight mb-4">

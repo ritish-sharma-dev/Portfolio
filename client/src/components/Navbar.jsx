@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
+import { Menu, Search, Terminal, X } from "lucide-react";
 
 const Navbar = () => {
     let { pageLinks } = useContext(PortfolioContext);
@@ -21,9 +22,7 @@ const Navbar = () => {
                             className="flex items-center gap-2 shrink-0"
                         >
                             <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary">
-                                <span className="material-symbols-outlined text-[20px] font-bold">
-                                    terminal
-                                </span>
+                                <Terminal className="h-5 w-5" aria-hidden="true" />
                             </div>
                             <span className="text-xl font-bold tracking-tight text-slate-100">
                                 Ritish_Sharma
@@ -63,9 +62,7 @@ const Navbar = () => {
                             {/* Search Bar */}
                             <div className="hidden lg:flex items-center relative group">
                                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500 group-focus-within:text-primary transition-colors">
-                                    <span className="material-symbols-outlined text-[20px]">
-                                        search
-                                    </span>
+                                    <Search className="h-5 w-5" aria-hidden="true" />
                                 </div>
                                 <input
                                     className="block w-64 pl-10 pr-12 py-1.5 bg-primary/5 border border-primary/10 rounded-lg text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary/50 transition-all"
@@ -89,19 +86,16 @@ const Navbar = () => {
                             </div>
                             {/* MOBILE MENU TOGGLE */}
                             <button
+                                aria-label={open ? "Close menu" : "Open menu"}
                                 onClick={() =>
                                     open ? setOpen(false) : setOpen(true)
                                 }
                                 className="lg:hidden flex align-center text-slate-300"
                             >
                                 {open ? (
-                                    <span className="material-symbols-outlined">
-                                        close
-                                    </span>
+                                    <X aria-hidden="true" />
                                 ) : (
-                                    <span className="material-symbols-outlined">
-                                        menu
-                                    </span>
+                                    <Menu aria-hidden="true" />
                                 )}
                             </button>
                         </div>
