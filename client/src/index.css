@@ -51,6 +51,116 @@ body {
     caret-color: #10b77f;
 }
 
+.developer-cursor {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 3rem;
+    height: 3rem;
+    margin: -1.5rem 0 0 -1.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease;
+}
+
+.developer-cursor.is-visible {
+    opacity: 1;
+}
+
+.developer-cursor-rotator {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: target-cursor-spin 2.4s linear infinite;
+}
+
+.developer-cursor-corner,
+.developer-cursor-dot {
+    position: absolute;
+}
+
+.developer-cursor-corner {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-color: #10b77f;
+    border-style: solid;
+    border-width: 0;
+    filter: drop-shadow(0 0 5px rgb(16 183 127 / 0.7));
+}
+
+.developer-cursor-corner-top-left {
+    top: 0;
+    left: 0;
+    border-top-width: 1px;
+    border-left-width: 1px;
+}
+
+.developer-cursor-corner-top-right {
+    top: 0;
+    right: 0;
+    border-top-width: 1px;
+    border-right-width: 1px;
+}
+
+.developer-cursor-corner-bottom-left {
+    bottom: 0;
+    left: 0;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+.developer-cursor-corner-bottom-right {
+    right: 0;
+    bottom: 0;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.developer-cursor-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 9999px;
+    background: #10b77f;
+    box-shadow: 0 0 10px #10b77f;
+    transform: translate(-50%, -50%);
+}
+
+.developer-cursor.is-active .developer-cursor-corner {
+    border-color: #d1fae5;
+    filter: drop-shadow(0 0 8px rgb(16 183 127 / 0.95));
+}
+
+@keyframes target-cursor-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 1024px) and (pointer: fine) {
+    .developer-cursor {
+        display: block;
+    }
+
+    html.target-cursor-active,
+    html.target-cursor-active body,
+    html.target-cursor-active a,
+    html.target-cursor-active button,
+    html.target-cursor-active input,
+    html.target-cursor-active textarea,
+    html.target-cursor-active select {
+        cursor: none;
+    }
+}
+
 .logo-loop-track {
     animation: logo-loop-scroll var(--logo-loop-duration) linear infinite;
     will-change: transform;

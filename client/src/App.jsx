@@ -5,6 +5,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import GalaxyStars from "./components/GalaxyStars";
+import DeveloperCursor from "./components/DeveloperCursor";
 
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const SkillsPage = lazy(() => import("./pages/SkillsPage"));
@@ -16,6 +17,7 @@ function App() {
     return (
         <>
             <GalaxyStars />
+            <DeveloperCursor />
             <div className="relative z-10 @container max-w-360 m-auto bg-transparent text-slate-100 antialiased">
                 <BrowserRouter>
                     <Navbar/>
