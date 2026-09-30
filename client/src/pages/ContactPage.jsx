@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ECard1 from "../components/cards/EducationPageCards/ECard1";
+import TechText from "../components/TechText";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 import toast from "react-hot-toast";
@@ -42,7 +43,7 @@ const ContactPage = () => {
             <Toaster position="top-center" containerStyle={{ top: 60 }} />
             {/* CONTACT PAGE START */}
             <div className="relative min-h-[calc(100vh-4rem)] flex overflow-hidden bg-transparent">
-                <section className="flex-1 max-w-3xl px-4 py-12 lg:px-12 overflow-y-auto">
+                <section className="flex-1 max-w-3xl px-4 py-12 lg:px-12">
                     {/* HEADER START */}
                     <nav className="flex items-center gap-2 text-xs font-medium text-slate-400  mb-4">
                         <span>Docs</span>
@@ -51,12 +52,12 @@ const ContactPage = () => {
                     </nav>
                     {/* HEADER END */}
                     {/* PAGE HEADING START */}
-                    <h1 className="text-4xl font-extrabold text-white mb-4 tracking-tight">
-                        Contact Support
+                    <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 tracking-tight">
+                        <TechText text="Contact Support" />
                     </h1>
                     {/* PAGE HEADING END */}
                     {/* HEADING DESCRIPTION START */}
-                    <p className="text-lg text-slate-400 mb-10 leading-relaxed">
+                    <p className="text-base sm:text-lg text-slate-400 mb-10 leading-relaxed">
                         Want to collaborate on a project? Reach out through our
                         contact endpoint or find us on social media.
                     </p>
@@ -64,7 +65,7 @@ const ContactPage = () => {
                     <div className="space-y-12">
                         {/* FORM SECTION START*/}
                         <div className="bg-[#161c1b99] p-8 rounded-2xl border border-[#1e2927] shadow-xl backdrop-blur-sm">
-                            <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <h2 className="text-lg sm:text-xl font-bold text-white mb-6 flex items-center gap-2">
                                 <Send className="h-5 w-5 text-primary" aria-hidden="true" />
                                 Send a Message
                             </h2>
@@ -145,7 +146,7 @@ const ContactPage = () => {
                         {/* SOCIAL LINKS SECTION START*/}
                         <div>
                             {/* HEADING START*/}
-                            <h2 className="text-xl font-bold text-white mb-6">
+                            <h2 className="text-lg sm:text-xl font-bold text-white mb-6">
                                 Social Channels
                             </h2>
                             {/* HEADING END */}

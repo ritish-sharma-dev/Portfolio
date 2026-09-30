@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 import { ChevronRight, GraduationCap } from "lucide-react";
+import TechText from "../components/TechText";
 
 const EducationPage = () => {
     const { education } = useContext(PortfolioContext);
@@ -24,12 +25,12 @@ const EducationPage = () => {
                                 </nav>
                                 {/* HEADER END */}
                                 {/* PAGE HEADING START */}
-                                <h1 className="text-4xl font-bold tracking-tight mb-4">
-                                    Education
+                                <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+                                    <TechText text="Education" />
                                 </h1>
                                 {/* PAGE HEADING END */}
                                 {/* PAGE DESCRIPTION START*/}
-                                <p className="text-lg text-slate-400  leading-relaxed">
+                                <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
                                     A historical record of academic
                                     qualifications, institutional honors, and
                                     professional learning paths.
@@ -53,7 +54,7 @@ const EducationPage = () => {
                                                         {education.duration}
                                                     </time>
                                                 </div>
-                                                <h3 className="text-lg font-bold">
+                                                <h3 className="text-base sm:text-lg font-bold">
                                                     {education.degree}
                                                 </h3>
                                                 <p className="text-sm text-primary/70 mb-2">

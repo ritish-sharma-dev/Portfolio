@@ -1,5 +1,6 @@
 import React from "react";
 import { BadgeCheck, Brain, ChevronRight, History } from "lucide-react";
+import TechText from "../components/TechText";
 
 const AboutPage = () => {
     return (
@@ -17,12 +18,12 @@ const AboutPage = () => {
                     {/* ABOUT SECTION START */}
                     <section id="about-me">
                         {/* HEADING START - ABOUT ME */}
-                        <h1 className="text-4xl font-bold tracking-tight mb-4">
-                            About Me
+                        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+                            <TechText text="About Me" />
                         </h1>
                         {/* HEADING END - ABOUT ME */}
                         {/* HEADING DESCRIPTION START */}
-                        <p className="text-lg text-slate-400 leading-relaxed mb-10">
+                        <p className="text-base sm:text-lg text-slate-400 leading-relaxed mb-10">
                             I am a passionate Software Engineer with a strong
                             foundation in computer science and a keen interest
                             in building innovative and user-centric
@@ -33,7 +34,7 @@ const AboutPage = () => {
                         {/* HEADING DESCRIPTION END */}
                         <hr className="border-primary/10 mb-10" />
                         {/* HEADING START - PERSONAL STORY */}
-                        <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                        <h2 className="text-xl sm:text-2xl font-bold mb-6 flex items-center gap-2">
                             <History className="h-6 w-6 text-primary" aria-hidden="true" />
                             Personal Story
                         </h2>
@@ -63,7 +64,7 @@ const AboutPage = () => {
                         </div>
                         {/* HEADING DESCRIPTION END */}
                         {/* HEADING START - CORE VALUES */}
-                        <h2 className="text-2xl font-bold mt-12 mb-6 flex items-center gap-2">
+                        <h2 className="text-xl sm:text-2xl font-bold mt-12 mb-6 flex items-center gap-2">
                             <BadgeCheck className="h-6 w-6 text-primary" aria-hidden="true" />
                             Core Values
                         </h2>
@@ -71,7 +72,7 @@ const AboutPage = () => {
                         {/* CORE VALUES START */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="p-5 rounded-xl border border-primary/20 bg-primary/5">
-                                <h3 className="font-bold text-slate-100 mb-2">
+                                <h3 className="text-base font-bold text-slate-100 mb-2">
                                     Simplicity First
                                 </h3>
                                 <p className="text-sm text-slate-400">
@@ -81,7 +82,7 @@ const AboutPage = () => {
                                 </p>
                             </div>
                             <div className="p-5 rounded-xl border border-primary/20 bg-primary/5">
-                                <h3 className="font-bold text-slate-100 mb-2">
+                                <h3 className="text-base font-bold text-slate-100 mb-2">
                                     User-Centricity
                                 </h3>
                                 <p className="text-sm text-slate-400">
@@ -91,7 +92,7 @@ const AboutPage = () => {
                                 </p>
                             </div>
                             <div className="p-5 rounded-xl border border-primary/20 bg-primary/5">
-                                <h3 className="font-bold text-slate-100 mb-2">
+                                <h3 className="text-base font-bold text-slate-100 mb-2">
                                     Continuous Learning
                                 </h3>
                                 <p className="text-sm text-slate-400">
@@ -101,7 +102,7 @@ const AboutPage = () => {
                                 </p>
                             </div>
                             <div className="p-5 rounded-xl border border-primary/20 bg-primary/5">
-                                <h3 className="font-bold text-slate-100 mb-2">
+                                <h3 className="text-base font-bold text-slate-100 mb-2">
                                     Radical Transparency
                                 </h3>
                                 <p className="text-sm text-slate-400">
@@ -113,7 +114,7 @@ const AboutPage = () => {
                         </div>
                         {/* CORE VALUES END */}
                         {/* HEADING START - PROFESSIONAL PHILOSOPHY */}
-                        <h2 className="text-2xl font-bold mt-12 mb-6 flex items-center gap-2">
+                        <h2 className="text-xl sm:text-2xl font-bold mt-12 mb-6 flex items-center gap-2">
                             <Brain className="h-6 w-6 text-primary" aria-hidden="true" />
                             Professional Philosophy
                         </h2>

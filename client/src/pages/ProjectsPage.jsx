@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 import { ArrowRight, ChevronRight, Code2, ExternalLink } from "lucide-react";
+import TechText from "../components/TechText";
 
 const ProjectsPage = () => {
     const { projects } = useContext(PortfolioContext);
@@ -20,12 +21,12 @@ const ProjectsPage = () => {
                         </nav>
                         {/* HEADER END */}
                         {/* PAGE HEADING START */}
-                        <h1 className="text-4xl font-bold tracking-tight mb-4">
-                            Projects
+                        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+                            <TechText text="Projects" />
                         </h1>
                         {/* PAGE HEADING END */}
                         {/* PAGE DESCRIPTION START  */}
-                        <p className="text-lg text-slate-400  leading-relaxed">
+                        <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
                             The Projects object allows you to manage and
                             interact with technical implementations. Each
                             project contains architectural metadata, deployment
@@ -57,7 +58,7 @@ const ProjectsPage = () => {
                                     <div className="flex-1 space-y-4 md:space-y-6">
                                         {/* PROJECT HEADING START */}
                                         <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight group-hover:text-primary transition-colors">
+                                            <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight group-hover:text-primary transition-colors">
                                                 {project.title}
                                             </h2>
                                             <div className="hidden sm:block h-px flex-1 bg-white/5 min-w-5" />

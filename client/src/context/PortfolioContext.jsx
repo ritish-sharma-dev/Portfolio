@@ -18,24 +18,35 @@ export const PortfolioProvider = ({ children }) => {
                 examples: ["C", "C++", "JavaScript", "SQL"],
             },
             {
-                name: "Frontend Development",
-                examples: ["HTML", "CSS", "React.js", "Tailwind CSS"],
+                name: "Frontend",
+                examples: ["HTML5", "CSS3", "React.js", "Tailwind CSS"],
             },
             {
-                name: "Backend Development",
-                examples: ["Node.js", "Express.js", "REST APIs", "JWT"],
+                name: "Backend",
+                examples: [
+                    "Node.js",
+                    "Express.js",
+                    "RESTful APIs",
+                    "JWT Authentication",
+                ],
             },
             {
                 name: "Databases",
                 examples: ["MongoDB", "MySQL"],
             },
             {
-                name: "Tools & Platforms",
-                examples: ["Git", "GitHub", "Vercel"],
+                name: "Developer Tools",
+                examples: ["Git", "GitHub", "VS Code", "Postman"],
             },
             {
-                name: "Other Technologies",
-                examples: ["Motion - Animation library ", "Nodemailer"],
+                name: "Core CS",
+                examples: [
+                    "Data Structures and Algorithms (DSA)",
+                    "Object-Oriented Programming (OOP)",
+                    "Database Management System (DBMS)",
+                    "Computer Networks (CN)",
+                    "Operating System (OS)",
+                ],
             },
         ],
         education: [

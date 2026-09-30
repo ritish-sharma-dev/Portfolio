@@ -2,6 +2,8 @@ import React from "react";
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 import { ChevronRight } from "lucide-react";
+import LogoLoop from "../components/LogoLoop";
+import TechText from "../components/TechText";
 
 const SkillsPage = () => {
     const { skills } = useContext(PortfolioContext);
@@ -18,10 +20,10 @@ const SkillsPage = () => {
                             <ChevronRight className="h-4 w-4" aria-hidden="true" />
                             <span className="text-primary">Skills</span>
                         </nav>
-                        <h1 className="text-4xl font-bold tracking-tight mb-4">
-                            Skills
+                        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+                            <TechText text="Skills" />
                         </h1>
-                        <p className="max-md:text-md  text-lg  text-slate-400  leading-relaxed">
+                        <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
                             These Skills of mine defines the technical expertise
                             and the level of proficiency in various
                             technologies. It provides structured information
@@ -30,6 +32,66 @@ const SkillsPage = () => {
                         </p>
                     </div>
                     {/* HEADER END */}
+                    <LogoLoop
+                        logos={[
+                            {
+                                name: "C",
+                                icon: "https://cdn.simpleicons.org/c",
+                            },
+                            {
+                                name: "C++",
+                                icon: "https://cdn.simpleicons.org/cplusplus",
+                            },
+                            {
+                                name: "JavaScript",
+                                icon: "https://cdn.simpleicons.org/javascript",
+                            },
+                            {
+                                name: "SQL",
+                                icon: "https://cdn.simpleicons.org/sqlite",
+                            },
+                            {
+                                name: "HTML5",
+                                icon: "https://cdn.simpleicons.org/html5",
+                            },
+                            {
+                                name: "React",
+                                icon: "https://cdn.simpleicons.org/react",
+                            },
+                            {
+                                name: "Express",
+                                icon: "https://cdn.simpleicons.org/express/d1fae5",
+                            },
+                            {
+                                name: "Node.js",
+                                icon: "https://cdn.simpleicons.org/nodedotjs",
+                            },
+                            {
+                                name: "MongoDB",
+                                icon: "https://cdn.simpleicons.org/mongodb",
+                            },
+                            {
+                                name: "Tailwind CSS",
+                                icon: "https://cdn.simpleicons.org/tailwindcss",
+                            },
+                            {
+                                name: "MySQL",
+                                icon: "https://cdn.simpleicons.org/mysql",
+                            },
+                            {
+                                name: "Git",
+                                icon: "https://cdn.simpleicons.org/git",
+                            },
+                            {
+                                name: "GitHub",
+                                icon: "https://cdn.simpleicons.org/github/f0f6fc",
+                            },
+                            {
+                                name: "Postman",
+                                icon: "https://cdn.simpleicons.org/postman",
+                            },
+                        ]}
+                    />
                     {/* SKILLS CARDS  START */}
                     <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* SKILLS CARD START */}
@@ -44,7 +106,7 @@ const SkillsPage = () => {
                                         <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.2em] text-primary/60">
                                             Expertise / 0{index + 1}
                                         </p>
-                                        <h2 className="text-2xl font-bold tracking-tight text-white group-hover:text-primary transition-colors">
+                                        <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white group-hover:text-primary transition-colors">
                                             {skill.name}
                                         </h2>
                                     </div>

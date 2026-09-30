@@ -3,6 +3,8 @@ import { NavLink } from "react-router";
 import Card2 from "../components/cards/HomePageCards/Card2";
 import Card3 from "../components/cards/HomePageCards/Card3";
 import Card4 from "../components/cards/HomePageCards/Card4";
+import PremiumIntro from "../components/PremiumIntro";
+import TechText from "../components/TechText";
 import {
     ArrowRight,
     ChevronRight,
@@ -19,17 +21,11 @@ const HomePage = () => {
             <main className="flex-1 flex flex-col lg:flex-row">
                 <div className="flex-1 max-w-3xl border-r border-primary/5">
                     {/* HEADER START */}
-                    <header className="relative top-0 z-10 bg-background-dark/80 backdrop-blur-md px-8 py-4 border-b border-primary/5 flex items-center justify-between">
+                    <header className="relative top-0 z-10 bg-background-dark/80 backdrop-blur-md px-8 py-4 border-b border-primary/5 flex items-center">
                         <div className="flex items-center gap-2 text-xs font-medium text-slate-400">
                             <span>Docs</span>
                             <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
                             <span className="text-primary">Introduction</span>
-                        </div>
-                        <div className="flex items-center gap-4">
-                            <div className="flex items-center gap-1.5 px-2 py-1 rounded border border-primary/20 text-[11px] font-mono text-primary bg-primary/5">
-                                <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-                                Available for hire
-                            </div>
                         </div>
                     </header>
                     {/* HEADER END */}
@@ -37,14 +33,12 @@ const HomePage = () => {
                     <div className="px-4 lg:px-12 py-12 space-y-24">
                         {/* INTRODUCTION SECTION START */}
                         <section className="scroll-mt-24" id="introduction">
-                            <h2 className="text-3xl font-extrabold tracking-tight text-white mb-6">
-                                Introduction
+                            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-6">
+                                <TechText text="Introduction" />
                             </h2>
                             <div className="prose prose-invert max-w-none">
-                                <p className="max-md:text-md text-lg leading-relaxed  mb-4 font-medium tracking-tight text-primary">
-                                    Ritish Sharma | Software Engineer
-                                </p>
-                                <p className="lg:text-md leading-relaxed text-slate-400 mb-6">
+                                <PremiumIntro />
+                                <p className="text-base sm:text-lg leading-relaxed text-slate-400 mb-6">
                                     I am a passionate software engineer with a
                                     strong foundation in computer science and a
                                     keen interest in building innovative and
@@ -81,7 +75,7 @@ const HomePage = () => {
                         {/* PROJECTS SECTION START */}
                         <section className="scroll-mt-24" id="projects">
                             <div className="flex items-center gap-3 mb-8">
-                                <h2 className="text-2xl font-bold tracking-tight text-white">
+                                <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white">
                                     Projects
                                 </h2>
                                 <div className="h-px flex-1 bg-primary/10"></div>
@@ -109,7 +103,7 @@ const HomePage = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <h3 className="text-lg font-bold text-white group-hover:text-primary transition-colors">
+                                    <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-primary transition-colors">
                                         MERN Stack Chat App
                                     </h3>
                                     <p className="text-sm text-slate-400 mt-2 leading-relaxed">
